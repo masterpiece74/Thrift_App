@@ -1,0 +1,16 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FaShoppingCart, FaTimesCircle, FaSearch, FaFilter } from 'react-icons/fa';
+import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
+
+// Backup of Marketplace.jsx
+
+export default function MarketplaceBackup() {
+  return (
+    <div>
+      <h1>Marketplace Backup</h1>
+      <p>This is a backup of the Marketplace page before debugging.</p>
+    </div>
+  );
+}

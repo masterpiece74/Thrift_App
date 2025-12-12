@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": "misqqhnf",
+      "name": "olajoye oluwafemi charles",
+      "email": "phemizee@gmail.com",
+      "phone": "+2349032217418",
+      "password": "1234567",
+      "type": "solo",
+      "groupName": null,
+      "phoneVerified": true,
+      "bvnVerified": true,
+      "bvn": "12345678912"
+    },
+    {
+      "id": "miss5ajk",
+      "name": "steve hills",
+      "email": "phemizee1@gmail.com",
+      "phone": "+234904567896",
+      "password": "1234567",
+      "type": "group",
+      "groupName": "oluwafemis",
+      "phoneVerified": true,
+      "bvnVerified": false
+    }
+  ]
+}
