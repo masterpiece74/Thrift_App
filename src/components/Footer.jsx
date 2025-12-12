@@ -14,10 +14,10 @@ export default function Footer() {
     { code: 'ha', name: 'Hausa', nativeName: 'Hausa' },
   ];
   return (
-    <footer className="bg-gradient-to-r from-emerald-900 to-teal-900 text-white py-12 px-4 sm:px-6 md:px-12">
+    <footer className="bg-linear-to-r from-emerald-900 to-teal-900 text-white py-12 px-4 sm:px-6 md:px-12">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
         <div className="space-y-2">
-          <h3 className="font-bold mb-4 text-lg bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('company')}</h3>
+          <h3 className="font-bold mb-4 text-lg bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('company')}</h3>
           <ul className="space-y-2 text-sm sm:text-base">
             <li className="hover:text-emerald-300 cursor-pointer transition">{t('about')}</li>
             <li className="hover:text-emerald-300 cursor-pointer transition">{t('contact')}</li>
@@ -26,7 +26,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-2">
-          <h3 className="font-bold mb-4 text-lg bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('contactHeading')}</h3>
+          <h3 className="font-bold mb-4 text-lg bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('contactHeading')}</h3>
           <a 
             href="mailto:contactrubiesthrift@gmail.com"
             className="text-sm sm:text-base text-gray-300 hover:text-emerald-300 hover:underline transition"
@@ -42,7 +42,7 @@ export default function Footer() {
           <p className="text-xs sm:text-sm text-gray-400">RubiesThrift</p>
         </div>
         <div className="space-y-2">
-          <h3 className="font-bold mb-4 text-lg bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('language')}</h3>
+          <h3 className="font-bold mb-4 text-lg bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('language')}</h3>
           <select
             value={selectedLanguage}
             onChange={(e) => setSelectedLanguage(e.target.value)}

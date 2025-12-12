@@ -21,11 +21,11 @@ export default function Navbar() {
           to="/"
           className="flex items-center gap-3 hover:opacity-85 transition group"
         >
-          <div className="bg-gradient-to-br from-teal-600 to-blue-700 p-2.5 rounded-lg shadow-lg group-hover:shadow-xl group-hover:scale-105 transition">
+          <div className="bg-linear-to-br from-teal-600 to-blue-700 p-2.5 rounded-lg shadow-lg group-hover:shadow-xl group-hover:scale-105 transition">
             <FaGem className="text-white text-2xl" />
           </div>
           <div className="flex flex-col">
-            <div className="text-xl font-black bg-gradient-to-r from-teal-700 to-blue-700 bg-clip-text text-transparent">
+            <div className="text-xl font-black bg-linear-to-r from-teal-700 to-blue-700 bg-clip-text text-transparent">
               RubiesThrift
             </div>
             <div className="text-xs font-semibold text-slate-500 tracking-wider uppercase -mt-1">

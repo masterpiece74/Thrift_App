@@ -67,8 +67,8 @@ export default function MarketplaceBanner({ banners }) {
     <div className="max-w-7xl mx-auto px-4 py-4">
       <div className="relative">
         {/* Left/right fade masks for polished look */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white/95 to-transparent dark:from-slate-900/95" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white/95 to-transparent dark:from-slate-900/95" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-linear-to-r from-white/95 to-transparent dark:from-slate-900/95" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-linear-to-l from-white/95 to-transparent dark:from-slate-900/95" />
 
         <div
           ref={containerRef}
@@ -80,7 +80,7 @@ export default function MarketplaceBanner({ banners }) {
         >
           <div className="flex gap-4 items-stretch min-w-max">
             {items.concat(items).map((b, idx) => (
-              <div key={`${b.id}-${idx}`} className={`min-w-[220px] flex-shrink-0 rounded-lg p-4 text-white ${b.bg} shadow-lg`}>
+              <div key={`${b.id}-${idx}`} className={`min-w-[220px] shrink-0 rounded-lg p-4 text-white ${b.bg} shadow-lg`}>
                 <div className="flex items-center gap-3">
                   <img src={b.logo} alt={b.name} className="w-16 h-16 object-contain bg-white/20 rounded p-2" />
                   <div>

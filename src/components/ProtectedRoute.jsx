@@ -7,7 +7,7 @@ export default function ProtectedRoute({ children }) {
 
   if (!isThriftUser) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white p-6">
+      <div className="min-h-screen flex items-center justify-center bg-linear-to-b from-slate-50 to-white p-6">
         <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 text-center">
           <h1 className="text-2xl font-extrabold text-gray-900 mb-4">Access Restricted</h1>
           <p className="text-gray-600 mb-6">
