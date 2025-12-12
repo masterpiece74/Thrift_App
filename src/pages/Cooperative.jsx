@@ -1,5 +1,5 @@
 import React from 'react';
-import CooperativeImg from '../assets/Cooperative.png';
+import CooperativeImg from '../assets/cooperative.png';
 
 export default function Cooperative() {
   return (
