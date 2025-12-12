@@ -1,5 +1,5 @@
 import React from 'react';
-import Ajo4 from '../assets/Ajo4.png'; // ✅ import the image
+import Ajo4 from '../assets/ajo4.png'; // ✅ import the image
 
 export default function JoinAjo() {
   return (
