@@ -1,5 +1,5 @@
 import React from 'react';
-import PartnersImg from '../assets/Partners.png';
+import PartnersImg from '../assets/partners.png';
 
 export default function Partners() {
   return (
