@@ -1,11 +1,11 @@
 // src/components/Community.jsx
 import React from 'react';
-import Ajo2 from '../assets/Ajo2.png';
+import ajo2 from '../assets/ajo2.png';
 
 export default function Community() {
   return (
     <div className="py-20 px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 bg-gray-50">
-      <img src={Ajo2} alt="Community financing" className="w-full md:w-1/2 rounded-xl shadow-lg" />
+      <img src={ajo2} alt="Community financing" className="w-full md:w-1/2 rounded-xl shadow-lg" />
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold mb-4">Community financing (ROSCA)</h2>
         <p className="mb-4 text-slate-700">
