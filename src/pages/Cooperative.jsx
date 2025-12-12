@@ -1,5 +1,5 @@
 import React from 'react';
-import CooperativeImg from '../assets/cooperative.png';
+import cooperativeImg from '../assets/cooperative.png';
 
 export default function Cooperative() {
   return (
@@ -11,7 +11,7 @@ export default function Cooperative() {
         </p>
       </div>
       <div className="md:w-1/2">
-        <img src={CooperativeImg} alt="Cooperative" className="rounded-xl shadow-lg mx-auto" />
+        <img src={cooperativeImg} alt="Cooperative" className="rounded-xl shadow-lg mx-auto" />
       </div>
     </div>
   );
