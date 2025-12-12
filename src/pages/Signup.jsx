@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Ajo1 from "../assets/Ajo1.png";
+import Ajo1 from "../assets/ajo1.png";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
