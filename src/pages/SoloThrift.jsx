@@ -144,10 +144,10 @@ export default function SoloThrift() {
   // Only show dashboard and savings if user is signed in
   if (!currentUser || !isThriftUser) {
     return (
-      <div className="bg-gradient-to-br from-slate-50 to-teal-50 min-h-screen flex items-center justify-center px-4">
+      <div className="bg-linear-to-br from-slate-50 to-teal-50 min-h-screen flex items-center justify-center px-4">
         <div className="max-w-md mx-auto p-8 bg-white rounded-xl shadow-lg border-t-4 border-teal-600 text-center">
           <FaPiggyBank className="text-5xl text-teal-700 mx-auto mb-4" />
-          <h1 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">{t('soloThrift')}</h1>
+          <h1 className="text-4xl font-extrabold mb-4 bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">{t('soloThrift')}</h1>
           <p className="text-lg text-slate-700 mb-6">{t('personalSavings')}</p>
           <p className="text-slate-600">Sign in to access your personal savings and goals dashboard.</p>
         </div>
@@ -156,12 +156,12 @@ export default function SoloThrift() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-slate-50 to-teal-50 min-h-screen pb-12">
+    <div className="bg-linear-to-br from-slate-50 to-teal-50 min-h-screen pb-12">
       <section className="max-w-6xl mx-auto px-4 md:px-6 py-12">
         {/* Header */}
         <div className="mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">{t('personalSavings')}</h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">{t('personalSavings')}</h1>
             <p className="text-lg text-slate-700">
               Welcome, <span className="font-bold text-teal-700">{currentUser.name || currentUser.email}</span>! {t('soloThriftDesc')}
             </p>
@@ -289,7 +289,7 @@ export default function SoloThrift() {
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
             <button 
               type="submit" 
-              className="px-8 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700 transition flex items-center gap-2 shadow-md"
+              className="px-8 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700 transition flex items-center gap-2 shadow-md"
             >
               <FaPlus /> {editingGoalId ? t('updateGoal') : t('addGoal')}
             </button>
@@ -368,7 +368,7 @@ export default function SoloThrift() {
                   <div className="mb-6">
                     <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden mb-2">
                       <div 
-                        className="bg-gradient-to-r from-teal-600 to-emerald-600 h-3 rounded-full transition-all duration-300" 
+                        className="bg-linear-to-r from-teal-600 to-emerald-600 h-3 rounded-full transition-all duration-300" 
                         style={{ width: percent + "%" }}
                       ></div>
                     </div>
@@ -392,7 +392,7 @@ export default function SoloThrift() {
                       />
                       <button 
                         type="submit" 
-                        className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-teal-700 transition flex items-center gap-2 whitespace-nowrap"
+                        className="px-4 py-2 bg-linear-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-teal-700 transition flex items-center gap-2 whitespace-nowrap"
                       >
                         <FaPlus className="text-sm" /> Add
                       </button>

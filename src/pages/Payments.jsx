@@ -492,7 +492,7 @@ export default function Payments() {
           {/* Sidebar - Wallet & Info */}
           <div className="space-y-6">
             {/* Wallet Balance */}
-            <div className="bg-gradient-to-br from-slate-700 to-slate-800 text-white rounded-lg shadow-lg p-6">
+            <div className="bg-linear-to-br from-slate-700 to-slate-800 text-white rounded-lg shadow-lg p-6">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-bold text-sm opacity-90">Wallet Balance</h3>
                 <FaWallet className="text-2xl opacity-70" />

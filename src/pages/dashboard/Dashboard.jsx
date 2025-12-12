@@ -6,9 +6,9 @@ export default function Dashboard() {
   const { currentUser, contributions } = useAuth();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-teal-50">
       {/* Top navbar for dashboard */}
-      <header className="bg-gradient-to-r from-teal-700 to-emerald-700 shadow-lg">
+      <header className="bg-linear-to-r from-teal-700 to-emerald-700 shadow-lg">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div className="text-2xl font-bold text-amber-300">RubiesThrift</div>
@@ -37,13 +37,13 @@ export default function Dashboard() {
               <p className="text-slate-600 mb-6">Select how you want to save and grow your wealth.</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <NavLink to="/solo-thrift/signup" className="block p-6 bg-gradient-to-br from-teal-50 to-teal-100 border-2 border-teal-300 rounded-lg hover:shadow-lg transition transform hover:scale-105">
+                <NavLink to="/solo-thrift/signup" className="block p-6 bg-linear-to-br from-teal-50 to-teal-100 border-2 border-teal-300 rounded-lg hover:shadow-lg transition transform hover:scale-105">
                   <h3 className="text-xl font-bold text-teal-900">Solo Thrift</h3>
                   <p className="text-teal-700 mt-2">Personal savings and goals.</p>
                   <div className="mt-4 inline-flex items-center px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700">Get started</div>
                 </NavLink>
 
-                <NavLink to="/dashboard/group-thrift" className="block p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 border-2 border-emerald-300 rounded-lg hover:shadow-lg transition transform hover:scale-105">
+                <NavLink to="/dashboard/group-thrift" className="block p-6 bg-linear-to-br from-emerald-50 to-emerald-100 border-2 border-emerald-300 rounded-lg hover:shadow-lg transition transform hover:scale-105">
                   <h3 className="text-xl font-bold text-emerald-900">Group Thrift (Ajo)</h3>
                   <p className="text-emerald-700 mt-2">Create or join a group thrift.</p>
                   <div className="mt-4 inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700">Get started</div>
@@ -74,7 +74,7 @@ export default function Dashboard() {
           </div>
 
           {/* Right column: wallet */}
-         <aside className="bg-gradient-to-br from-teal-600 to-emerald-600 p-6 rounded-xl shadow-lg text-white">
+         <aside className="bg-linear-to-br from-teal-600 to-emerald-600 p-6 rounded-xl shadow-lg text-white">
   <h3 className="text-lg font-semibold text-amber-300">Wallet Balance</h3>
 
   <div className="text-4xl font-extrabold mt-3 text-amber-300">
@@ -86,7 +86,7 @@ export default function Dashboard() {
   <div className="mt-6 space-y-2">
     <a
       href="/payments"
-      className="block px-4 py-2 bg-amber-500 text-teal-900 rounded-lg hover:bg-amber-400 text-center font-semibold transition font-bold"
+      className="block px-4 py-2 bg-amber-500 text-teal-900 rounded-lg hover:bg-amber-400 text-center font-semibold transition"
     >
       Make Payment
     </a>

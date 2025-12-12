@@ -31,8 +31,8 @@ export default function FAQ() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 bg-gradient-to-br from-slate-50 to-teal-50 min-h-screen">
-      <h1 className="text-4xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-6">Frequently Asked Questions</h1>
+    <div className="max-w-4xl mx-auto px-6 py-12 bg-linear-to-br from-slate-50 to-teal-50 min-h-screen">
+      <h1 className="text-4xl font-bold bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-6">Frequently Asked Questions</h1>
       <p className="text-gray-600 mb-8">
         Find answers to the most common questions about RubiesThrift.
       </p>

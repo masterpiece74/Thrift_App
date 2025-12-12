@@ -78,9 +78,9 @@ export default function PersonalSavings() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-slate-50 to-teal-50 min-h-screen">
+    <div className="bg-linear-to-br from-slate-50 to-teal-50 min-h-screen">
       <section className="max-w-3xl mx-auto px-6 py-12">
-        <h1 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent text-center">Personal Savings</h1>
+        <h1 className="text-4xl font-extrabold mb-6 bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent text-center">Personal Savings</h1>
         <p className="text-lg text-slate-700 mb-8 text-center">
           Track your personal savings goals and progress.
         </p>
@@ -101,15 +101,15 @@ export default function PersonalSavings() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-2 flex items-center gap-2"><FaCalendarAlt /> Deadline</label>
+              <label className="text-sm font-medium text-slate-700 mb-2 flex items-center gap-2"><FaCalendarAlt /> Deadline</label>
               <input type="date" value={goalDeadline} onChange={e => setGoalDeadline(e.target.value)} className="w-full border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-2 flex items-center gap-2"><FaBell /> Reminder (days before)</label>
+              <label className="text-sm font-medium text-slate-700 mb-2 flex items-center gap-2"><FaBell /> Reminder (days before)</label>
               <input type="number" min="0" value={goalReminder} onChange={e => setGoalReminder(e.target.value)} placeholder="e.g. 3" className="w-full border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500" />
             </div>
           </div>
-          <button type="submit" className="px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700 flex items-center gap-2"><FaPlus /> Add Goal</button>
+          <button type="submit" className="px-6 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700 flex items-center gap-2"><FaPlus /> Add Goal</button>
         </form>
 
         {/* Goals List */}
@@ -173,7 +173,7 @@ export default function PersonalSavings() {
                     </div>
                     <div className="mb-4">
                       <div className="w-full bg-slate-100 rounded-full h-4">
-                        <div className="bg-gradient-to-r from-teal-600 to-emerald-600 h-4 rounded-full" style={{ width: percent + "%" }}></div>
+                        <div className="bg-linear-to-r from-teal-600 to-emerald-600 h-4 rounded-full" style={{ width: percent + "%" }}></div>
                       </div>
                       <div className="flex justify-between text-sm mt-2">
                         <span className="text-teal-700 font-bold">₦{goal.saved.toLocaleString()}</span>
@@ -182,7 +182,7 @@ export default function PersonalSavings() {
                     </div>
                     <form onSubmit={e => { setSelectedGoal(goal.id); handleAddMoney(e); }} className="flex flex-col md:flex-row gap-4 items-center mb-4">
                       <input type="number" min="1" value={selectedGoal === goal.id ? addAmount : ""} onChange={e => { setSelectedGoal(goal.id); setAddAmount(e.target.value); }} placeholder="Add money (₦)" className="w-full md:w-40 border border-slate-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-teal-500" />
-                      <button type="submit" className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-teal-700 flex items-center gap-2"><FaPlus /> Add Money</button>
+                      <button type="submit" className="px-6 py-3 bg-linear-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-teal-700 flex items-center gap-2"><FaPlus /> Add Money</button>
                     </form>
                     {goal.history.length > 0 && (
                       <div className="mt-4">
@@ -199,7 +199,7 @@ export default function PersonalSavings() {
                     )}
                     {/* Export Button */}
                     <button
-                      className="mt-4 px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-300 text-white font-semibold rounded-lg flex items-center gap-2"
+                      className="mt-4 px-4 py-2 bg-linear-to-r from-amber-500 to-amber-300 text-white font-semibold rounded-lg flex items-center gap-2"
                       onClick={() => {
                         const data = JSON.stringify(goal, null, 2);
                         const blob = new Blob([data], { type: 'application/json' });

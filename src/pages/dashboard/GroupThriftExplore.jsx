@@ -231,7 +231,7 @@ export default function GroupThriftExplore() {
             {filteredGroups.map(g => (
               <div
                 key={g.id}
-                className="bg-gradient-to-br from-slate-50 to-teal-50 border-2 border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-teal-400 transition transform hover:scale-105"
+                className="bg-linear-to-br from-slate-50 to-teal-50 border-2 border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-teal-400 transition transform hover:scale-105"
               >
                 <div className="mb-4">
                   <h3 className="text-xl font-bold text-teal-900 mb-2">{g.name}</h3>
@@ -258,7 +258,7 @@ export default function GroupThriftExplore() {
 
                 <button
                   onClick={() => handleJoin(g)}
-                  className="w-full px-4 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 font-semibold transition"
+                  className="w-full px-4 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 font-semibold transition"
                 >
                   View & Join
                 </button>
@@ -337,7 +337,7 @@ export default function GroupThriftExplore() {
 
           <button
             type="submit"
-            className="w-full px-6 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-teal-700 transition flex items-center justify-center gap-2"
+            className="w-full px-6 py-4 bg-linear-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-teal-700 transition flex items-center justify-center gap-2"
           >
             <FaPlus /> Create Group
           </button>

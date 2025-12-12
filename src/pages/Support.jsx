@@ -153,11 +153,11 @@ export default function Support() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50 py-12">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-teal-50 py-12">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-4">
+          <h1 className="text-5xl font-bold bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-4">
             Support Center
           </h1>
           <p className="text-lg text-slate-700">Get help, submit tickets, and chat with our support team</p>
@@ -200,7 +200,7 @@ export default function Support() {
             onClick={() => setActiveTab('contact')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition ${
               activeTab === 'contact'
-                ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+                ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -210,7 +210,7 @@ export default function Support() {
             onClick={() => setActiveTab('tickets')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition ${
               activeTab === 'tickets'
-                ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+                ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -220,7 +220,7 @@ export default function Support() {
             onClick={() => setActiveTab('chat')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition ${
               activeTab === 'chat'
-                ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+                ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -230,7 +230,7 @@ export default function Support() {
             onClick={() => setActiveTab('faq')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition ${
               activeTab === 'faq'
-                ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+                ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -306,7 +306,7 @@ export default function Support() {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700 transition"
+                className="w-full px-6 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700 transition"
               >
                 Submit Support Request
               </button>
@@ -323,7 +323,7 @@ export default function Support() {
                 <p className="text-lg text-slate-600 mb-4">No tickets yet</p>
                 <button
                   onClick={() => setActiveTab('contact')}
-                  className="px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700"
+                  className="px-4 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700"
                 >
                   Create a Ticket
                 </button>
@@ -369,7 +369,7 @@ export default function Support() {
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-teal-600">
             <div className="h-96 flex flex-col">
               {/* Chat Messages */}
-              <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gradient-to-b from-slate-50 to-white">
+              <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-linear-to-b from-slate-50 to-white">
                 {chatMessages.length === 0 ? (
                   <div className="text-center py-12">
                     <FaComments className="text-4xl text-teal-300 mx-auto mb-4" />
@@ -380,7 +380,7 @@ export default function Support() {
                     <div key={msg.id} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
                       <div className={`max-w-xs px-4 py-2 rounded-lg ${
                         msg.sender === 'user'
-                          ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+                          ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
                           : 'bg-slate-100 text-slate-800'
                       }`}>
                         <p>{msg.text}</p>
@@ -403,7 +403,7 @@ export default function Support() {
                   />
                   <button
                     type="submit"
-                    className="px-4 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 font-semibold transition"
+                    className="px-4 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 font-semibold transition"
                   >
                     Send
                   </button>

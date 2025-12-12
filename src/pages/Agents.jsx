@@ -3,10 +3,10 @@ import { FaPiggyBank, FaWallet, FaChartLine } from "react-icons/fa";
 
 export default function Agents() {
   return (
-    <div className="bg-gradient-to-br from-slate-50 to-teal-50 min-h-screen">
+    <div className="bg-linear-to-br from-slate-50 to-teal-50 min-h-screen">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h1 className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-extrabold mb-6 bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">
           Become a Digital Thrift Collector
         </h1>
         <p className="text-lg text-slate-700 mb-8">
@@ -14,7 +14,7 @@ export default function Agents() {
         </p>
         <a
           href="/signup"
-          className="px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-md hover:from-teal-700 hover:to-emerald-700"
+          className="px-6 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-md hover:from-teal-700 hover:to-emerald-700"
         >
           Become an Agent
         </a>

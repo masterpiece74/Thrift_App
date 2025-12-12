@@ -4,19 +4,19 @@ import GroupImg from "../assets/group.png"; // ✅ your image
 
 export default function GroupThrift() {
   return (
-    <div className="py-16 px-6 md:px-20 bg-gradient-to-br from-slate-50 to-teal-50">
+    <div className="py-16 px-6 md:px-20 bg-linear-to-br from-slate-50 to-teal-50">
 
       {/* HERO SECTION */}
       <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
         <div className="md:w-1/2">
-          <h1 className="text-5xl font-extrabold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-6">Group Thrift</h1>
+          <h1 className="text-5xl font-extrabold bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-6">Group Thrift</h1>
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
             Join a community of SMEs and corporate employees pooling funds together for rotating savings
             and access micro-credit with no interest. Grow together. Save together.
           </p>
           <Link
             to="/group-thrift/signup"
-            className="px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-md font-semibold hover:from-teal-700 hover:to-emerald-700"
+            className="px-6 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-md font-semibold hover:from-teal-700 hover:to-emerald-700"
           >
             Explore Groups
           </Link>
@@ -48,8 +48,8 @@ export default function GroupThrift() {
       </div>
 
       {/* TITI STORY SECTION */}
-      <div className="bg-gradient-to-r from-teal-50 to-emerald-50 p-10 rounded-2xl mb-20 shadow border-l-4 border-teal-600">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-4">Here's Titi</h2>
+      <div className="bg-linear-to-r from-teal-50 to-emerald-50 p-10 rounded-2xl mb-20 shadow border-l-4 border-teal-600">
+        <h2 className="text-3xl font-bold bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-4">Here's Titi</h2>
         <p className="text-lg text-slate-700 leading-relaxed">
           She urgently needs to raise ₦500,000 for her business.  
           Titi joins a public group of 4 people who contribute ₦125,000 monthly.  
@@ -60,14 +60,14 @@ export default function GroupThrift() {
 
       {/* JOIN AJOMONEY SECTION */}
       <div className="text-center mb-20">
-        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-4">Join AjoMoney</h2>
+        <h2 className="text-4xl font-extrabold bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-4">Join AjoMoney</h2>
         <p className="text-lg text-slate-700 mb-6 max-w-2xl mx-auto">
           Become financially free through flexible savings such as rotating group savings and thrift 
           contribution with collective investment.
         </p>
         <Link
           to="/group-thrift/signup"
-          className="px-8 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700"
+          className="px-8 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-emerald-700"
         >
           Get Started
         </Link>
@@ -128,7 +128,7 @@ export default function GroupThrift() {
 function FeatureCard({ title, text }) {
   return (
     <div className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border-t-4 border-teal-600">
-      <h3 className="text-xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-3">{title}</h3>
+      <h3 className="text-xl font-bold bg-linear-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent mb-3">{title}</h3>
       <p className="text-slate-700">{text}</p>
     </div>
   );

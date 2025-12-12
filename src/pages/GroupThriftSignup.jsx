@@ -41,10 +41,10 @@ export default function GroupThriftSignup() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50 flex flex-col">
-      <div className="flex-grow flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-emerald-50 flex flex-col">
+      <div className="grow flex items-center justify-center py-12 px-4">
         <div className="max-w-lg w-full bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-emerald-600">
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">Create Group Thrift Account</h1>
+        <h1 className="text-2xl font-bold bg-linear-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">Create Group Thrift Account</h1>
         <p className="text-sm text-slate-600 mb-6">Create a group account and invite members to join your rotational savings.</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -113,7 +113,7 @@ export default function GroupThriftSignup() {
 
           {error && <div className="text-sm text-red-600">{error}</div>}
 
-          <button type="submit" className="w-full px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-md hover:from-emerald-700 hover:to-teal-700 font-semibold">
+          <button type="submit" className="w-full px-4 py-2 bg-linear-to-r from-emerald-600 to-teal-600 text-white rounded-md hover:from-emerald-700 hover:to-teal-700 font-semibold">
             Create Group
           </button>
         </form>
@@ -128,7 +128,7 @@ export default function GroupThriftSignup() {
       </div>
       
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-emerald-700 to-teal-700 text-white py-8 px-6 text-center shadow-lg">
+      <footer className="bg-linear-to-r from-emerald-700 to-teal-700 text-white py-8 px-6 text-center shadow-lg">
         <p className="text-sm mb-2 text-amber-300">© 2025 RubiesThrift — Group Savings Made Easy</p>
         <p className="text-xs text-emerald-100">Secure • Transparent • Trusted</p>
       </footer>

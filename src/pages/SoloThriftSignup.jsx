@@ -41,10 +41,10 @@ export default function SoloThriftSignup() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50 flex flex-col">
-      <div className="flex-grow flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-teal-50 flex flex-col">
+      <div className="grow flex items-center justify-center py-12 px-4">
         <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-teal-600">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">Create Solo Thrift Account</h1>
+          <h1 className="text-2xl font-bold bg-linear-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">Create Solo Thrift Account</h1>
           <p className="text-sm text-slate-600 mb-6">Sign up to create and manage your personal thrift/Kolo.</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -103,7 +103,7 @@ export default function SoloThriftSignup() {
 
           {error && <div className="text-sm text-red-600">{error}</div>}
 
-          <button type="submit" className="w-full px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-md hover:from-teal-700 hover:to-emerald-700 font-semibold">
+          <button type="submit" className="w-full px-4 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-md hover:from-teal-700 hover:to-emerald-700 font-semibold">
             Create Account
           </button>
         </form>
@@ -118,7 +118,7 @@ export default function SoloThriftSignup() {
       </div>
       
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-teal-700 to-emerald-700 text-white py-8 px-6 text-center shadow-lg">
+      <footer className="bg-linear-to-r from-teal-700 to-emerald-700 text-white py-8 px-6 text-center shadow-lg">
         <p className="text-sm mb-2 text-amber-300">© 2025 RubiesThrift — Personal Savings Made Simple</p>
         <p className="text-xs text-teal-100">Secure • Transparent • Trusted</p>
       </footer>

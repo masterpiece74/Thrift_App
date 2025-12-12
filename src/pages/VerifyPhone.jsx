@@ -33,7 +33,7 @@ export default function VerifyPhone() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-teal-50 p-6">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-slate-50 to-teal-50 p-6">
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow border-t-4 border-emerald-600">
         <h1 className="text-xl font-bold mb-2 text-teal-900">Verify your phone via WhatsApp</h1>
         <p className="text-sm text-slate-600 mb-4">We will send a one-time code to your WhatsApp number.</p>
@@ -45,7 +45,7 @@ export default function VerifyPhone() {
           </div>
 
           <div className="flex gap-2">
-            <button onClick={handleSend} className="px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded hover:from-teal-700 hover:to-emerald-700 font-semibold">Send OTP via WhatsApp</button>
+            <button onClick={handleSend} className="px-4 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded hover:from-teal-700 hover:to-emerald-700 font-semibold">Send OTP via WhatsApp</button>
             <button onClick={() => { setMessage('Resend not implemented'); }} className="px-4 py-2 bg-slate-200 rounded">Resend</button>
           </div>
 
@@ -55,7 +55,7 @@ export default function VerifyPhone() {
               <input value={otp} onChange={e => setOtp(e.target.value)} placeholder="123456" className="mt-1 block w-full border border-slate-300 rounded p-2 focus:ring-2 focus:ring-teal-500" />
             </div>
             <div>
-              <button type="submit" className="w-full px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded hover:from-teal-700 hover:to-emerald-700 font-semibold">Verify OTP</button>
+              <button type="submit" className="w-full px-4 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded hover:from-teal-700 hover:to-emerald-700 font-semibold">Verify OTP</button>
             </div>
           </form>
 

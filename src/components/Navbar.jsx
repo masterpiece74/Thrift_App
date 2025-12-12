@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaShoppingCart, FaGem } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";

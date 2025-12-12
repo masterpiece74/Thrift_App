@@ -91,10 +91,10 @@ export default function SignIn() {
         alt="Sign in background"
         className="absolute inset-0 w-full h-full object-cover -z-10 filter contrast-110 saturate-120 brightness-95"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/18 via-transparent to-slate-900/8 -z-10"></div>
-      <div className="flex-grow flex items-center justify-center py-12 px-4">
+      <div className="absolute inset-0 bg-linear-to-br from-indigo-900/18 via-transparent to-slate-900/8 -z-10"></div>
+      <div className="grow flex items-center justify-center py-12 px-4">
         <div className="max-w-md w-full bg-white bg-opacity-95 p-8 rounded-2xl shadow-2xl border border-white/20 ring-1 ring-indigo-100/20">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">
+          <h1 className="text-3xl font-bold bg-linear-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">
             Sign In
           </h1>
           <p className="text-sm text-slate-600 mb-8">
@@ -169,7 +169,7 @@ export default function SignIn() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-teal-700 to-emerald-700 text-white py-8 px-6 text-center border-t border-slate-700 shadow-lg">
+      <footer className="bg-linear-to-r from-teal-700 to-emerald-700 text-white py-8 px-6 text-center border-t border-slate-700 shadow-lg">
         <p className="text-sm mb-2">© 2025 RubiesThrift — Secure Login</p>
         <p className="text-xs text-slate-400">Your security is our priority</p>
       </footer>

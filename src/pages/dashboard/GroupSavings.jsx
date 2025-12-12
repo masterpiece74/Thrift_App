@@ -181,7 +181,7 @@ export default function GroupSavings() {
           onClick={() => setFilter('all')}
           className={`px-4 py-2 rounded-lg font-semibold transition ${
             filter === 'all'
-              ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+              ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
               : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
           }`}
         >
@@ -191,7 +191,7 @@ export default function GroupSavings() {
           onClick={() => setFilter('active')}
           className={`px-4 py-2 rounded-lg font-semibold transition ${
             filter === 'active'
-              ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white'
+              ? 'bg-linear-to-r from-teal-600 to-emerald-600 text-white'
               : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
           }`}
         >
@@ -204,7 +204,7 @@ export default function GroupSavings() {
         <div className="bg-white rounded-xl shadow p-12 text-center">
           <FaUsers className="text-5xl text-slate-300 mx-auto mb-4" />
           <p className="text-lg text-slate-600 mb-4">No groups yet</p>
-          <button className="px-6 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700">
+          <button className="px-6 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700">
             Create a Group
           </button>
         </div>
@@ -213,7 +213,7 @@ export default function GroupSavings() {
           {filteredGroups.map(group => (
             <div key={group.id} className="bg-white rounded-xl shadow-lg border-t-4 border-teal-600 overflow-hidden hover:shadow-xl transition">
               {/* Group Header */}
-              <div className="bg-gradient-to-r from-teal-50 to-emerald-50 p-6 border-b border-slate-200">
+              <div className="bg-linear-to-r from-teal-50 to-emerald-50 p-6 border-b border-slate-200">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h2 className="text-2xl font-bold text-teal-900 mb-1">{group.name}</h2>
@@ -260,7 +260,7 @@ export default function GroupSavings() {
                       setSelectedGroup(group.id);
                       setShowAddMember(!showAddMember);
                     }}
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 text-sm"
+                    className="flex items-center gap-2 px-4 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 text-sm"
                   >
                     <FaUserPlus /> Add Member
                   </button>
@@ -295,7 +295,7 @@ export default function GroupSavings() {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleAddMember(group.id)}
-                        className="px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 text-sm font-semibold"
+                        className="px-4 py-2 bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-lg hover:from-teal-700 hover:to-emerald-700 text-sm font-semibold"
                       >
                         Add Member
                       </button>

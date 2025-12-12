@@ -74,10 +74,10 @@ export default function Signup() {
         alt="Signup background"
         className="absolute inset-0 w-full h-full object-cover -z-10 filter contrast-115 saturate-125 brightness-95"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-transparent to-teal-900/8 -z-10"></div>
-      <div className="flex-grow flex items-center justify-center py-12 px-4">
+      <div className="absolute inset-0 bg-linear-to-br from-indigo-900/20 via-transparent to-teal-900/8 -z-10"></div>
+      <div className="grow flex items-center justify-center py-12 px-4">
         <div className="max-w-md w-full bg-white bg-opacity-95 p-8 rounded-2xl shadow-2xl border border-white/20 ring-1 ring-indigo-100/30">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">
+          <h1 className="text-3xl font-bold bg-linear-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">
             Sign Up
           </h1>
           <p className="text-sm text-slate-600 mb-8">

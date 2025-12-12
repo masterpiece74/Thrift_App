@@ -127,7 +127,7 @@ export default function GroupDetails() {
       </button>
 
       {/* Group Header */}
-      <div className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-xl shadow-lg p-8">
+      <div className="bg-linear-to-r from-teal-600 to-emerald-600 text-white rounded-xl shadow-lg p-8">
         <h1 className="text-4xl font-bold mb-3">{group.name}</h1>
         <p className="text-teal-50 text-lg mb-6">{group.description}</p>
 
@@ -243,7 +243,7 @@ export default function GroupDetails() {
               <div className="flex flex-col justify-end">
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold rounded-lg hover:from-teal-700 hover:to-emerald-700 transition"
+                  className="px-6 py-3 bg-linear-to-r from-teal-600 to-emerald-600 text-white font-bold rounded-lg hover:from-teal-700 hover:to-emerald-700 transition"
                 >
                   Record Contribution
                 </button>
@@ -337,7 +337,7 @@ export default function GroupDetails() {
               </tbody>
             </table>
 
-            <div className="mt-6 p-6 bg-gradient-to-r from-teal-50 to-emerald-50 rounded-lg border-l-4 border-teal-600">
+            <div className="mt-6 p-6 bg-linear-to-r from-teal-50 to-emerald-50 rounded-lg border-l-4 border-teal-600">
               <p className="text-slate-700 mb-2">Total Collected from Group:</p>
               <p className="text-3xl font-bold text-teal-700">
                 ₦{(group.totalCollected || totalContributed).toLocaleString()}

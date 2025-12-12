@@ -1076,8 +1076,8 @@ export default function Marketplace() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50">
-      <div className="bg-gradient-to-r from-teal-700 to-emerald-700 text-white py-8 shadow-lg">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-teal-50">
+      <div className="bg-linear-to-r from-teal-700 to-emerald-700 text-white py-8 shadow-lg">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-3xl font-bold text-amber-300">
             RubiesThrift Marketplace
@@ -1186,7 +1186,7 @@ export default function Marketplace() {
                     </div>
                     <button
                       onClick={handlePaystackCheckout}
-                      className="mt-3 w-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white py-2 rounded hover:from-teal-700 hover:to-emerald-700 font-semibold"
+                      className="mt-3 w-full bg-linear-to-r from-teal-600 to-emerald-600 text-white py-2 rounded hover:from-teal-700 hover:to-emerald-700 font-semibold"
                     >
                       Checkout with Paystack
                     </button>
@@ -1240,7 +1240,7 @@ export default function Marketplace() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-teal-900 to-emerald-900 text-white py-12 shadow-lg">
+      <div className="bg-linear-to-r from-teal-900 to-emerald-900 text-white py-12 shadow-lg">
         <div className="max-w-7xl mx-auto text-center text-amber-300 font-semibold">
           RubiesThrift Marketplace
         </div>

@@ -87,9 +87,9 @@ export default function Blog() {
   const featuredBlog = blogs.find(blog => blog.featured);
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-slate-50 to-teal-50">
+    <div className="w-full min-h-screen bg-linear-to-b from-slate-50 to-teal-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white py-12 px-6">
+      <div className="bg-linear-to-br from-emerald-600 to-teal-600 text-white py-12 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-4">
             <div className="bg-white bg-opacity-20 p-3 rounded-lg backdrop-blur-sm">
@@ -227,7 +227,7 @@ export default function Blog() {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl p-8 text-white text-center">
+        <div className="mt-16 bg-linear-to-r from-emerald-600 to-teal-600 rounded-xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
           <p className="text-emerald-100 mb-6">Subscribe to our newsletter for the latest tips and updates</p>
           <div className="flex gap-2 max-w-md mx-auto">
