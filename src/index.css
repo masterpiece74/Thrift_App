@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+/* Accessibility: visible focus styles for keyboard users */
+:focus {
+  outline: 3px solid rgba(59, 130, 246, 0.6); /* indigo-500 */
+  outline-offset: 2px;
+}
+
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 9999;
+}

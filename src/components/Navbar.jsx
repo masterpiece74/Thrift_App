@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
-import { FaShoppingCart, FaGem } from "react-icons/fa";
+import { FaShoppingCart, FaGem, FaHeart } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 import CartNotification from "./CartNotification";
+import { useWishlist } from "../context/WishlistContext";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // mobile menu
   const [productsOpen, setProductsOpen] = useState(false); // desktop Products dropdown
   const { cart, notification } = useCart();
   const { isThriftUser } = useAuth();
+  const { wishlist } = useWishlist();
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -102,7 +104,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            to="/signup"
+            to="/get-started"
             className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700"
           >
             Get Started
@@ -118,6 +120,19 @@ export default function Navbar() {
               {cart.length > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
                   {cart.length}
+                </span>
+              )}
+            </Link>
+          )}
+          {isThriftUser && (
+            <Link
+              to="/wishlist"
+              className="relative text-slate-700 hover:text-indigo-600 flex items-center gap-2"
+            >
+              <FaHeart size={18} />
+              {wishlist.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-pink-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+                  {wishlist.length}
                 </span>
               )}
             </Link>
@@ -186,6 +201,16 @@ export default function Navbar() {
               </Link>
             )}
 
+            {isThriftUser && (
+              <Link
+                to="/wishlist"
+                className="block text-slate-700 hover:text-indigo-600"
+                onClick={() => setMenuOpen(false)}
+              >
+                Wishlist
+              </Link>
+            )}
+
             <Link
               to="/faq"
               className="block text-slate-700 hover:text-indigo-600"
@@ -201,7 +226,7 @@ export default function Navbar() {
               Blog
             </Link>
             <Link
-              to="/signup"
+              to="/get-started"
               className="block px-4 py-2 bg-indigo-700 text-white rounded-md hover:bg-indigo-800 mt-2"
               onClick={() => setMenuOpen(false)}
             >
